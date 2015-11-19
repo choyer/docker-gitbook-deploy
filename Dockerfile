@@ -23,6 +23,6 @@ WORKDIR /srv/gitbook
 
 VOLUME /srv/gitbook /srv/html
 
-EXPOSE 4000
+# EXPOSE 4000
 
-CMD /usr/local/bin/gitbook serve
+# CMD /usr/local/bin/gitbook serve
