@@ -1,6 +1,8 @@
 FROM node:latest
 MAINTAINER Carl Hoyer <carl@pixolium.ca>
 
+LABEL version="2.5.2"
+
 # Update system
 RUN apt-get -q -y update && apt-get -q -y upgrade
 
