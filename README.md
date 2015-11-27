@@ -1,8 +1,12 @@
 # GitBook Build & Deploy
 
+Ideal for use in a CI environment (e.g. Gitlab CI) to a) build and b) deploy Gitbook via FTP using [NcFTP](http://www.ncftp.com/ncftp/) which supports passing parameters via the command-line tool `ncftpput`.
+
 Inspired by [fallah/gitbook](https://hub.docker.com/r/fellah/gitbook/)
 
-Primarily meant to be used in a CI environment (e.g. Gitlab CI) to build and deploy Gitbook via FTP using [NcFTP](http://www.ncftp.com/ncftp/) which supports passing parameters via the command-line tool `ncftpput`.
+Available on Docker Hub: https://hub.docker.com/r/choyer/gitbook-deploy/
+
+`docker pull choyer/gitbook-deploy`
 
 Sample Gitlab CI ` .gitlab-ci.yml` config to build and deploy static site via ftp:
 
@@ -18,3 +22,5 @@ Gitbook Build & Deploy Static Site:
   only:
     - master
 ```
+
+Where `$FTP_USERNAME` and `$FTP_PASSWORD` are [Gitlab project user defined variables](http://doc.gitlab.com/ci/variables/README.html#user-defined-variables-secure-variables).
