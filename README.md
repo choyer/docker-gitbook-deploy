@@ -21,6 +21,9 @@ Gitbook Build & Deploy Static Site:
 
   only:
     - master
+
+  artifacts:
+    untracked: true
 ```
 
 Where `$FTP_USERNAME` and `$FTP_PASSWORD` are [Gitlab project user defined variables](http://doc.gitlab.com/ci/variables/README.html#user-defined-variables-secure-variables).
