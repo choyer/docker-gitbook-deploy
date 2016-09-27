@@ -1,7 +1,7 @@
 FROM node:latest
 MAINTAINER Carl Hoyer <carl@pixolium.ca>
 
-LABEL version="1.1.0"
+LABEL version="3.0.0"
 
 # Update system
 RUN apt-get -q -y update && apt-get -q -y upgrade
@@ -12,7 +12,7 @@ RUN apt-get -q -y install ncftp
 
 # Install GitBook
 # https://github.com/GitbookIO/gitbook
-RUN npm install -g gitbook-cli && gitbook versions:install 2.6.7
+RUN npm install -g gitbook-cli && gitbook versions:install 3.0.0
 
 # Cleanup
 RUN apt-get clean autoclean && npm cache clear && \

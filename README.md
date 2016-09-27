@@ -6,6 +6,8 @@ Inspired by [fallah/gitbook](https://hub.docker.com/r/fellah/gitbook/)
 
 Available on Docker Hub: https://hub.docker.com/r/choyer/gitbook-deploy/
 
+Version sync'd with GitBook beginning with version 3.0.0
+
 `docker pull choyer/gitbook-deploy`
 
 Sample Gitlab CI ` .gitlab-ci.yml` config to build and deploy static site via ftp:
