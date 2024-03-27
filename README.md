@@ -1,3 +1,6 @@
+> [!WARNING]
+> On **Feb 14, 2023**, GitBook [announced the deprecation](https://github.com/GitbookIO/gitbook-cli/commit/6d9b3b894b5da9aaf94027b8661fdd522bbb779d) of [gitbook-cli](https://github.com/GitbookIO/gitbook-cli). As a result use at your own risk!
+
 # GitBook Build & Deploy
 
 Ideal for use in a CI environment (e.g. Gitlab CI) to a) build and b) deploy Gitbook via FTP using [NcFTP](http://www.ncftp.com/ncftp/) which supports passing parameters via the command-line tool `ncftpput`.
